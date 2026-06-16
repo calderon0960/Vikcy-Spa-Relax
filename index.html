@@ -1,53 +1,3 @@
-<!DOCTYPE html>
-<html lang="es-MX">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vicky Spa Relax | Luxury Wellness & Beauty</title>
-    <meta name="description" content="Espacio exclusivo de bienestar y belleza en Cabo San Lucas. Tratamientos en cabina y servicio a domicilio. Reserva en línea con confirmación por correo.">
-    <link rel="stylesheet" href="estilos.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
-</head>
-<body>
-
-<!-- Navegación -->
-<header class="header">
-    <div class="container">
-        <div class="logo">
-            <img src="logo-vicky-spa.jpg" alt="Vicky Spa Relax" class="logo-img">
-            <div>
-                <h1>Vicky Spa Relax</h1>
-                <p>Luxury Wellness & Beauty</p>
-            </div>
-        </div>
-        <nav class="nav">
-            <a href="#inicio">Inicio</a>
-            <a href="#servicios">Servicios</a>
-            <a href="#domicilio">A Domicilio</a>
-            <a href="#experiencias">Experiencias</a>
-            <a href="#galeria">Galería</a>
-            <a href="#nosotros">Nosotros</a>
-            <a href="#testimonios">Testimonios</a>
-            <a href="#reserva">Reservar</a>
-            <a href="#contacto">Contacto</a>
-        </nav>
-    </div>
-</header>
-
-<!-- Sección Inicio / Hero -->
-<section id="inicio" class="hero">
-    <div class="hero-video">
-        <img src="facial-tratamiento.png" alt="Ambiente relajante del spa" class="video-fondo">
-    </div>
-    <div class="hero-overlay"></div>
-    <div class="hero-content">
-        <h2>Descubre un espacio diseñado para renovar tu cuerpo, relajar tu mente y resaltar tu belleza</h2>
-        <a href="#reserva" class="btn-principal">📝 Rellenar formulario de reserva</a>
-    </div>
-</section>
-
 <!-- Servicios -->
 <section id="servicios" class="section">
     <div class="container">
@@ -67,9 +17,9 @@
             </div>
 
             <div class="servicio-card">
-                <img src="fácil1.png" alt="Hieloterapia">
-                <h3>Hieloterapia</h3>
-                <p>Una experiencia refrescante que ayuda a tonificar y estimular la circulación.</p>
+                <img src="mesoterapia-facial.png" alt="Mesoterapia Facial">
+                <h3>Mesoterapia / Hidratación Profunda</h3>
+                <p>Tratamiento que aporta vitaminas, ácido hialurónico y nutrientes directamente a la piel, mejorando su textura, luminosidad y firmeza.</p>
             </div>
 
             <div class="servicio-card">
@@ -94,40 +44,6 @@
     </div>
 </section>
 
-<!-- Servicio a Domicilio -->
-<section id="domicilio" class="section bg-crema">
-    <div class="container">
-        <h2 class="section-title">Servicio a Domicilio</h2>
-        <div class="domicilio-texto-centrado">
-            <h3>Comodidad sin salir de casa</h3>
-            <p>Llevamos toda la experiencia de nuestro spa directamente a la puerta de tu hogar u oficina. Contamos con equipo profesional, insumos de primera calidad y la misma atención exclusiva que nos caracteriza.</p>
-            <p>Disponible en toda la zona de Cabo San Lucas y alrededores, con previa reservación.</p>
-            <a href="#reserva" class="btn-principal">Solicitar servicio</a>
-        </div>
-    </div>
-</section>
-
-<!-- Experiencias -->
-<section id="experiencias" class="section">
-    <div class="container">
-        <h2 class="section-title">Experiencias Únicas</h2>
-        <div class="experiencias-grid">
-            <div class="experiencia-item">
-                <h3>Relajación Total</h3>
-                <p>Un momento creado para desconectar del estrés y recuperar tu energía.</p>
-            </div>
-            <div class="experiencia-item">
-                <h3>Belleza Natural</h3>
-                <p>Tratamientos que resaltan tu bienestar y confianza desde adentro hacia afuera.</p>
-            </div>
-            <div class="experiencia-item">
-                <h3>Bienestar Integral</h3>
-                <p>Una combinación de técnicas orientadas al equilibrio físico y emocional.</p>
-            </div>
-        </div>
-    </div>
-</section>
-
 <!-- Galería -->
 <section id="galeria" class="section bg-crema">
     <div class="container">
@@ -135,135 +51,36 @@
         <div class="galeria-grid">
             <img src="facial-limpieza.png" alt="Limpieza facial profesional">
             <img src="facial-tratamiento.png" alt="Tratamiento facial en cabina">
+            <img src="mesoterapia-facial.png" alt="Mesoterapia e hidratación profunda">
             <img src="dermapen-microneedling.png" alt="Microneedling">
             <img src="ventosas-terapia.png" alt="Terapia con ventosas">
-            <img src="fácil1.png" alt="Hidratación profunda">
             <img src="certificado-grupo-spacio.jpg" alt="Certificación profesional">
         </div>
     </div>
 </section>
 
-<!-- Nosotros -->
-<section id="nosotros" class="section">
-    <div class="container">
-        <h2 class="section-title">Nosotros</h2>
-        <p class="texto-centrado">
-            Vicky Spa Relax es un espacio boutique exclusivo en Cabo San Lucas, donde la experiencia, la atención personalizada y el bienestar son el centro de nuestra propuesta. Nos dedicamos a ofrecer tratamientos de alta calidad en un ambiente elegante y tranquilo, diseñado para que cada visita sea un momento inolvidable.
-        </p>
-    </div>
-</section>
+<!-- Formulario: agregué la opción en la lista -->
+<select id="servicio" name="servicio" required>
+    <option value="">Selecciona una opción</option>
+    <option value="masajes">Masajes Terapéuticos</option>
+    <option value="faciales">Faciales Premium</option>
+    <option value="mesoterapia">Mesoterapia / Hidratación Profunda</option>
+    <option value="hieloterapia">Hieloterapia</option>
+    <option value="ventosas">Ventosas y Terapias</option>
+    <option value="dermapen">Dermapen / Microneedling</option>
+    <option value="gluteos">Levantamiento de Glúteos</option>
+    <option value="domicilio">Servicio a Domicilio</option>
+</select>
 
-<!-- Testimonios -->
-<section id="testimonios" class="section bg-crema">
-    <div class="container">
-        <h2 class="section-title">Lo que dicen nuestros clientes</h2>
-        <div class="testimonios-grid">
-            <div class="testimonio-card">
-                <div class="estrellas">★★★★★</div>
-                <p>"Una experiencia increíble en un ambiente hermoso y profesional."</p>
-            </div>
-            <div class="testimonio-card">
-                <div class="estrellas">★★★★★</div>
-                <p>"El servicio a domicilio es excelente, todo llegó impecable y muy puntual."</p>
-            </div>
-            <div class="testimonio-card">
-                <div class="estrellas">★★★★★</div>
-                <p>"Atención personalizada y resultados que realmente se sienten desde la primera sesión."</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- ✅ FORMULARIO DE RESERVA - NETLIFY FORMS -->
-<section id="reserva" class="section">
-    <div class="container">
-        <h2 class="section-title">Formulario de Reserva</h2>
-        <div class="formulario-contenedor">
-            <p class="texto-centrado">Completa tus datos y te enviaremos la confirmación y detalles a tu correo electrónico.</p>
-            
-            <form 
-                name="reserva-vicky-spa" 
-                method="POST" 
-                data-netlify="true" 
-                data-netlify-honeypot="bot-protect"
-                class="form-reserva"
-            >
-                <input type="hidden" name="form-name" value="reserva-vicky-spa" />
-                <p class="hidden" style="display:none;">
-                    <label>No llenar si eres humano: <input name="bot-protect"></label>
-                </p>
-
-                <div class="form-grupo">
-                    <label for="nombre">Nombre completo *</label>
-                    <input type="text" id="nombre" name="nombre" required placeholder="Ej. María López">
-                </div>
-
-                <div class="form-grupo">
-                    <label for="email">Correo electrónico *</label>
-                    <input type="email" id="email" name="email" required placeholder="tucorreo@ejemplo.com">
-                </div>
-
-                <div class="form-grupo">
-                    <label for="telefono">Teléfono *</label>
-                    <input type="tel" id="telefono" name="telefono" required placeholder="Ej. +52 624 123 4567">
-                </div>
-
-                <div class="form-grupo">
-                    <label for="servicio">Tipo de servicio *</label>
-                    <select id="servicio" name="servicio" required>
-                        <option value="">Selecciona una opción</option>
-                        <option value="masajes">Masajes Terapéuticos</option>
-                        <option value="faciales">Faciales Premium</option>
-                        <option value="hieloterapia">Hieloterapia</option>
-                        <option value="ventosas">Ventosas y Terapias</option>
-                        <option value="dermapen">Dermapen / Microneedling</option>
-                        <option value="gluteos">Levantamiento de Glúteos</option>
-                        <option value="domicilio">Servicio a Domicilio</option>
-                    </select>
-                </div>
-
-                <div class="form-grupo">
-                    <label for="fecha">Fecha preferida *</label>
-                    <input type="date" id="fecha" name="fecha" required>
-                </div>
-
-                <div class="form-grupo">
-                    <label for="hora">Hora aproximada *</label>
-                    <input type="time" id="hora" name="hora" required>
-                </div>
-
-                <div class="form-grupo">
-                    <label for="mensaje">Comentarios adicionales</label>
-                    <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe aquí cualquier detalle o indicación especial..."></textarea>
-                </div>
-
-                <button type="submit" class="btn-principal btn-enviar">Enviar solicitud</button>
-                <p class="aviso-confirmacion">✅ Recibirás un correo de confirmación en menos de 24 horas.</p>
-            </form>
-        </div>
-    </div>
-</section>
-
-<!-- Contacto -->
+<!-- Contacto con WhatsApp agregado -->
 <section id="contacto" class="section bg-crema">
     <div class="container">
         <h2 class="section-title">Contáctanos</h2>
         <div class="contacto-info texto-centrado">
             <p><strong>📍 Ubicación:</strong> Cabo San Lucas, Baja California Sur</p>
+            <p><strong>📱 WhatsApp:</strong> <a href="https://wa.me/526241189249" target="_blank">+52 624 118 9249</a></p>
             <p><strong>📘 Facebook:</strong> <a href="https://www.facebook.com/profile.php?id=100063196405663" target="_blank">Vicky Spa Relax</a></p>
             <p><strong>🎥 TikTok:</strong> <a href="https://vt.tiktok.com/ZSQPv2P6u/" target="_blank">@vickysparelax</a></p>
         </div>
     </div>
 </section>
-
-<footer class="footer">
-    <div class="container texto-centrado">
-        <p>&copy; 2026 Vicky Spa Relax | Luxury Wellness & Beauty</p>
-        <p>Síguenos en: <a href="https://www.facebook.com/profile.php?id=100063196405663" target="_blank">Facebook</a> | <a href="https://vt.tiktok.com/ZSQPv2P6u/" target="_blank">TikTok</a></p>
-    </div>
-</footer>
-
-<script src="script.js"></script>
-</body>
-                    </html>
-                    
