@@ -1,15 +1,11 @@
-// Desplazamiento suave entre secciones
 document.querySelectorAll('a[href^="#"]').forEach(ancla => {
     ancla.addEventListener('click', function (e) {
         e.preventDefault();
         const destino = document.querySelector(this.getAttribute('href'));
-        if (destino) {
-            destino.scrollIntoView({ behavior: 'smooth' });
-        }
+        if (destino) destino.scrollIntoView({ behavior: 'smooth' });
     });
 });
 
-// Cambio de fondo de navegación al hacer scroll
 window.addEventListener('scroll', () => {
     const header = document.querySelector('.header');
     if (window.scrollY > 50) {
