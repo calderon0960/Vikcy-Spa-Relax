@@ -1,3 +1,4 @@
+// Desplazamiento suave entre secciones
 document.querySelectorAll('a[href^="#"]').forEach(ancla => {
     ancla.addEventListener('click', function (e) {
         e.preventDefault();
@@ -6,6 +7,7 @@ document.querySelectorAll('a[href^="#"]').forEach(ancla => {
     });
 });
 
+// Cambio de fondo al hacer scroll
 window.addEventListener('scroll', () => {
     const header = document.querySelector('.header');
     if (window.scrollY > 50) {
@@ -16,3 +18,11 @@ window.addEventListener('scroll', () => {
         header.style.boxShadow = '0 2px 8px rgba(0,0,0,0.05)';
     }
 });
+
+// Mensaje de confirmación al enviar
+const form = document.querySelector('.form-reserva');
+if (form) {
+    form.addEventListener('submit', () => {
+        alert('✅ Solicitud enviada correctamente. Recibirás la confirmación en tu correo en breve.');
+    });
+}
