@@ -18,11 +18,3 @@ window.addEventListener('scroll', () => {
         header.style.boxShadow = '0 2px 8px rgba(0,0,0,0.05)';
     }
 });
-
-// Mensaje de confirmación al enviar
-const form = document.querySelector('.form-reserva');
-if (form) {
-    form.addEventListener('submit', () => {
-        alert('✅ Solicitud enviada correctamente. Recibirás la confirmación en tu correo en breve.');
-    });
-}
